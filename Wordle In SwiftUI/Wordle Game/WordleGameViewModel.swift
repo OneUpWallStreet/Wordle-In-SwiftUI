@@ -44,6 +44,7 @@ class WordleGameViewModel: ObservableObject {
     
     /// Restarts the game chaning the secret word, and removing all the local data about the current gameplay status
     func restartGameSession() {
+        
         let secretWordManager = SecretWordModel.mainSecretWordInstance
         secretWordManager.generateNewWord { wordChangeStatus in
             if wordChangeStatus {
@@ -119,6 +120,7 @@ class WordleGameViewModel: ObservableObject {
 //                  Check if user won
                     if guessedWords[currentRow].convertArrayToString() == SecretWordModel.mainSecretWordInstance.secretWordString {
                         print("In game over")
+//                        UNCOMMENT THISS
                         return (.gameover,nil)
                     }
                     

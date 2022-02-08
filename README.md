@@ -18,6 +18,13 @@ The game (application) still works, I know the implementation and logic is kinda
 
 Also this applications does not show any alerts, for e.g. when you enter a incorrect word, that's because in my other app the alert was represented in another SwiftUI view which was displayed with a UIHostingController(), but for this app I did not want to include any UIKit components unnecessarily so I left that part out.
 
+## Images 
+
+<p align="middle">
+  <img src="/Images/initialView.png" width="200" height="400" />
+  <img src="/Images/winView.png" width="200" height="400" />
+</p>
+
 
 ## Extra 
 If you have any questions/suggestions, ping me or create an issue/pull-request and I'll respond.
